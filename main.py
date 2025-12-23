@@ -9,7 +9,7 @@ from gtts import gTTS
 import pygame
 from google import genai
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyB4n0r6sJhx-BQCFMjcuzldKhojNtblRV8")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 
 if GOOGLE_API_KEY == "AIzaSyB4n0r6sJhx-BQCFMjcuzldKhojNtblRV8":
     print("JARVIS PROGRAM STARTED")
@@ -156,3 +156,4 @@ if __name__ == "__main__":
         except Exception as e:
             print("Error:", e)
             time.sleep(1)
+
